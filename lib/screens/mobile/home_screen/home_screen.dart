@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kuchiger/screens/mobile/home_screen/widgets/footer_widget.dart';
 import 'package:kuchiger/screens/mobile/home_screen/widgets/general_info_widget.dart';
+import 'package:kuchiger/screens/mobile/home_screen/widgets/line_widget.dart';
 import 'package:kuchiger/widgets/kuchiger_app_bar.dart';
 import 'package:kuchiger/widgets/kuchiger_main_widget.dart';
 
@@ -44,42 +46,6 @@ class HomeScreenMobile extends StatelessWidget {
             ),
             FooterWidget(),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class LineWidget extends StatelessWidget {
-  const LineWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 1,
-      color: const Color.fromRGBO(22, 26, 30, 1),
-      margin: const EdgeInsets.symmetric(horizontal: 100),
-    );
-  }
-}
-
-class FooterWidget extends StatelessWidget {
-  const FooterWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 18,
-      color: Colors.black,
-      child: const Center(
-        child: Text(
-          '© Kuchiger',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'Montserrat',
-            fontSize: 10,
-            fontWeight: FontWeight.w400,
-          ),
         ),
       ),
     );
