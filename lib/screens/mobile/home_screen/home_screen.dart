@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kuchiger/screens/mobile/home_screen/widgets/footer_widget.dart';
+import 'package:kuchiger/widgets/footer_widget.dart';
 import 'package:kuchiger/screens/mobile/home_screen/widgets/general_info_widget.dart';
 import 'package:kuchiger/screens/mobile/home_screen/widgets/line_widget.dart';
 import 'package:kuchiger/widgets/kuchiger_app_bar.dart';
