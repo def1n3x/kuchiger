@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Использование Builder для создания подходящего контекста
-    return MaterialApp(home: TransferScreenMobile()
+    return MaterialApp(home: ContactsScreenMobile()
         // Builder(
         //   builder: (BuildContext context) {
         //     // Получение размеров экрана
