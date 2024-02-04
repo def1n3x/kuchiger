@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LineWidget extends StatelessWidget {
-  const LineWidget({super.key});
+class LineWidgetMobile extends StatelessWidget {
+  const LineWidgetMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

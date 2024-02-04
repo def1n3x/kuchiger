@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuchiger/screens/desktop/widgets/app_bar_desktop.dart';
 
 class HomeScreenDesktop extends StatelessWidget {
   const HomeScreenDesktop({super.key});
@@ -6,7 +7,12 @@ class HomeScreenDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.green,
+      appBar: KuchigerAppBarDesktop(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [],
+        ),
+      ),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class KuchigerMainWidget extends StatelessWidget {
-  const KuchigerMainWidget({super.key});
+class MainWidgetMobile extends StatelessWidget {
+  const MainWidgetMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

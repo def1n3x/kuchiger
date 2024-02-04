@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MapWidget extends StatelessWidget {
-  const MapWidget({super.key});
+class MapWidgetMobile extends StatelessWidget {
+  const MapWidgetMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

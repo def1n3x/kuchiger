@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class GeneralInfoWidget extends StatelessWidget {
+class GeneralInfoWidgetMobile extends StatelessWidget {
   final String title;
   final String description;
   final String imagePath;
   final bool isTextFirst;
   final Size imageSize;
 
-  const GeneralInfoWidget({
+  const GeneralInfoWidgetMobile({
     super.key,
     required this.title,
     required this.description,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TransferInfoWidget extends StatelessWidget {
-  const TransferInfoWidget({super.key});
+class TransferInfoWidgetMobile extends StatelessWidget {
+  const TransferInfoWidgetMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

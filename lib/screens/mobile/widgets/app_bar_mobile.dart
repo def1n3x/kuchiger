@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kuchiger/screens/mobile/room_screen/room_screen.dart';
+import 'package:kuchiger/screens/mobile/room_screen/room_screen_mobile.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
-class KuchigerAppbar extends StatelessWidget implements PreferredSizeWidget {
-  const KuchigerAppbar({super.key});
+class AppBarMobile extends StatelessWidget implements PreferredSizeWidget {
+  const AppBarMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

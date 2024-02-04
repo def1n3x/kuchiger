@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CarWidget extends StatelessWidget {
-  const CarWidget({super.key});
+class CarWidgetMobile extends StatelessWidget {
+  const CarWidgetMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
