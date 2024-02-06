@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kuchiger/screens/mobile/room_screen/room_screen_mobile.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
 class AppBarMobile extends StatelessWidget implements PreferredSizeWidget {
