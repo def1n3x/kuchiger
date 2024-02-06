@@ -20,7 +20,7 @@ class TransferInfoWidgetMobile extends StatelessWidget {
         ),
         const SizedBox(height: 15),
         const Text(
-          'Отправляйтесь в увлекательное приключение в Кучигэр с нашим трансфером!',
+          'Отправляйтесь в увлекательное приключение в Кучегэр с нашим трансфером!',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontFamily: 'Montserrat',
@@ -39,7 +39,7 @@ class TransferInfoWidgetMobile extends StatelessWidget {
         ),
         _buildTransferInfo(
           'assets/images/calendar-viezd.png',
-          'Даты выезда: Возвращение запланировано на 7, 18 или 27 число с нашего курорта Кучигер.',
+          'Даты выезда: Возвращение запланировано на 7, 18 или 27 число с нашего курорта Кучегэр.',
         ),
         _buildTransferInfo(
           'assets/images/oplata.png',
@@ -47,7 +47,7 @@ class TransferInfoWidgetMobile extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         const Text(
-          'Не упустите шанс на незабываемое приключение в Кучигере! Забронируйте свое место прямо сейчас!',
+          'Не упустите шанс на незабываемое приключение в Кучегэре! Забронируйте свое место прямо сейчас!',
           style: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 15,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kuchiger/screens/desktop/transfer_screen/widgets/car_widget_desktop.dart';
 import 'package:kuchiger/screens/desktop/transfer_screen/widgets/map_widget_desktop.dart';
-import 'package:kuchiger/screens/desktop/transfer_screen/widgets/tesing.dart';
 import 'package:kuchiger/screens/desktop/transfer_screen/widgets/transfer_info_widget_desktop.dart';
 import 'package:kuchiger/screens/desktop/widgets/app_bar_desktop.dart';
 import 'package:kuchiger/screens/desktop/widgets/footer_widget_desktop.dart';

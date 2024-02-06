@@ -27,7 +27,7 @@ class ContactsWidgetMobile extends StatelessWidget {
         _buildItem('assets/images/telegram-icon.png', '@kucheger02'),
         _buildItem(
           'assets/images/map-icon.png',
-          '671632, Россия, Республика Бурятия, Курумканский район, улус Кучигер',
+          '671632, Россия, Республика Бурятия, Курумканский район, улус Кучегэр',
         ),
       ],
     );
