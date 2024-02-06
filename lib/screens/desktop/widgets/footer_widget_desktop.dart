@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class FooterWidgetMobile extends StatelessWidget {
-  const FooterWidgetMobile({super.key});
+class FooterWidgetDesktop extends StatelessWidget {
+  const FooterWidgetDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 18,
+      height: 38,
       color: Colors.black,
       child: const Center(
         child: Text(
@@ -14,7 +14,7 @@ class FooterWidgetMobile extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontFamily: 'Montserrat',
-            fontSize: 10,
+            fontSize: 20,
             fontWeight: FontWeight.w400,
           ),
         ),

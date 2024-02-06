@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MainWidgetMobile extends StatelessWidget {
-  const MainWidgetMobile({super.key});
+class MainWidgetDesktop extends StatelessWidget {
+  const MainWidgetDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 225,
+      height: 380,
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -23,17 +23,20 @@ class MainWidgetMobile extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Montserrat',
-                  fontSize: 36,
+                  fontSize: 72,
                   fontWeight: FontWeight.w600,
                 ),
                 textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 10,
               ),
               Text(
                 'благоустроенно и круглогодично',
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'Montserrat',
-                  fontSize: 12,
+                  fontSize: 32,
                   fontWeight: FontWeight.w400,
                 ),
               ),

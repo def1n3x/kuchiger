@@ -23,9 +23,10 @@ class TransferInfoWidgetMobile extends StatelessWidget {
           'Отправляйтесь в увлекательное приключение в Кучигэр с нашим трансфером!',
           textAlign: TextAlign.center,
           style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontSize: 16,
-              fontWeight: FontWeight.w500),
+            fontFamily: 'Montserrat',
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
         ),
         const SizedBox(height: 20),
         _buildTransferInfo(
