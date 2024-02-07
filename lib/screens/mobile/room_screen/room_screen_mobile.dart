@@ -37,8 +37,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 1-4
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 345,
               title: 'Номера 1 - 4',
               imagePath: 'assets/images/komnata-1.png',
               description: 'Двухместный номер',
@@ -62,8 +60,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 5-6
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 345,
               title: 'Номера 5 - 6',
               imagePath: 'assets/images/komnata-2.png',
               description: 'Трехместный номер',
@@ -87,8 +83,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 7-8
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 345,
               title: 'Номера 7 - 8',
               imagePath: 'assets/images/komnata-3.png',
               description: 'Четырехместный номер',
@@ -126,8 +120,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 3-6
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 386,
               title: 'Номера 3 - 6',
               imagePath: 'assets/images/komnata-1.png',
               description: 'Двухместный благоустроенный номер\n(без душа)',
@@ -153,8 +145,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 8
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 368,
               title: 'Номер 8',
               imagePath: 'assets/images/komnata-2.png',
               description: 'Семейный номер',
@@ -180,8 +170,6 @@ class RoomScreenMobile extends StatelessWidget {
 
             // Комната 9-10
             RoomsWidgetMobile(
-              widthContainer: 361,
-              heightContainer: 368,
               title: 'Номера 9 - 10',
               imagePath: 'assets/images/komnata-3.png',
               description: 'Трехместный номер',

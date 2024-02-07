@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class RoomsWidgetMobile extends StatelessWidget {
-  final double widthContainer;
-  final double heightContainer;
   final String title;
   final String imagePath;
   final String description;
@@ -11,8 +9,6 @@ class RoomsWidgetMobile extends StatelessWidget {
   final List<String> imageDescription;
 
   const RoomsWidgetMobile({
-    required this.widthContainer,
-    required this.heightContainer,
     required this.title,
     required this.imagePath,
     required this.description,
@@ -27,8 +23,10 @@ class RoomsWidgetMobile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 16),
       child: Container(
-        width: widthContainer,
-        height: heightContainer,
+        constraints: BoxConstraints(
+          maxWidth: double.infinity,
+          maxHeight: double.infinity,
+        ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: const Color.fromRGBO(22, 26, 30, 1),
