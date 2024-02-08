@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kuchiger/screens/desktop/contacts_screen/contacts_screen_desktop.dart';
 import 'package:kuchiger/screens/desktop/home_screen/home_screen_desktop.dart';
+import 'package:kuchiger/screens/desktop/room_screen/room_screen_desktop.dart';
 import 'package:kuchiger/screens/desktop/transfer_screen/transfer_screen_desktop.dart';
 import 'package:kuchiger/screens/mobile/contacts_screen/contacts_screen_mobile.dart';
 import 'package:kuchiger/screens/mobile/home_screen/home_screen_mobile.dart';
@@ -24,7 +25,7 @@ class MainApp extends StatelessWidget {
         '/contactsmobile': (context) => const ContactsScreenMobile(),
         '/transfermobile': (context) => const TransferScreenMobile(),
         '/homedesktop': (context) => const HomeScreenDesktop(),
-        // '/roomsdesktop': (context) => const RoomScreenDesktop(),
+        '/roomsdesktop': (context) => const RoomScreenDesktop(),
         '/contactsdesktop': (context) => const ContactsScreenDesktop(),
         '/transferdesktop': (context) => const TransferScreenDesktop(),
       },
