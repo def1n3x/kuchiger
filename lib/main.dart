@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kuchiger/blocs/room_bloc.dart';
 import 'package:kuchiger/screens/desktop/contacts_screen/contacts_screen_desktop.dart';
 import 'package:kuchiger/screens/desktop/home_screen/home_screen_desktop.dart';
 import 'package:kuchiger/screens/desktop/room_screen/room_screen_desktop.dart';
@@ -18,31 +20,34 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Использование Builder для создания подходящего контекста
-    return MaterialApp(
-      routes: {
-        '/homemobile': (context) => const HomeScreenMobile(),
-        '/roomsmobile': (context) => const RoomScreenMobile(),
-        '/contactsmobile': (context) => const ContactsScreenMobile(),
-        '/transfermobile': (context) => const TransferScreenMobile(),
-        '/homedesktop': (context) => const HomeScreenDesktop(),
-        '/roomsdesktop': (context) => const RoomScreenDesktop(),
-        '/contactsdesktop': (context) => const ContactsScreenDesktop(),
-        '/transferdesktop': (context) => const TransferScreenDesktop(),
-      },
-      home: Builder(
-        builder: (BuildContext context) {
-          // Получение размеров экрана
-          final Size size = MediaQuery.of(context).size;
-          // Определение, является ли устройство мобильным
-          bool isMobile =
-              size.width < 800; // или другой порог для мобильных устройств
-          // Выбор домашнего экрана в зависимости от платформы
-          Widget home = isMobile
-              ? const HomeScreenMobile()
-              : const HomeScreenDesktop(); // было isMobile ? const HomeScreenMobile() : const HomeScreenDesktop();
-
-          return home;
+    return BlocProvider(
+      create: (context) => RoomBloc(),
+      child: MaterialApp(
+        routes: {
+          '/homemobile': (context) => const HomeScreenMobile(),
+          '/roomsmobile': (context) => const RoomScreenMobile(),
+          '/contactsmobile': (context) => const ContactsScreenMobile(),
+          '/transfermobile': (context) => const TransferScreenMobile(),
+          '/homedesktop': (context) => const HomeScreenDesktop(),
+          '/roomsdesktop': (context) => const RoomScreenDesktop(),
+          '/contactsdesktop': (context) => const ContactsScreenDesktop(),
+          '/transferdesktop': (context) => const TransferScreenDesktop(),
         },
+        home: Builder(
+          builder: (BuildContext context) {
+            // Получение размеров экрана
+            final Size size = MediaQuery.of(context).size;
+            // Определение, является ли устройство мобильным
+            bool isMobile =
+                size.width < 800; // или другой порог для мобильных устройств
+            // Выбор домашнего экрана в зависимости от платформы
+            Widget home = isMobile
+                ? const HomeScreenMobile()
+                : const HomeScreenDesktop(); // было isMobile ? const HomeScreenMobile() : const HomeScreenDesktop();
+
+            return home;
+          },
+        ),
       ),
     );
   }

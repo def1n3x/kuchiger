@@ -3,8 +3,6 @@ import 'package:kuchiger/screens/desktop/room_screen/widgets/big_line_widget_des
 import 'package:kuchiger/screens/desktop/room_screen/widgets/info_widget_desktop.dart';
 import 'package:kuchiger/screens/desktop/room_screen/widgets/rooms_widget_desktop.dart';
 import 'package:kuchiger/screens/desktop/room_screen/widgets/small_line_widget_desktop.dart';
-import 'package:kuchiger/screens/desktop/room_screen/widgets/te.dart';
-import 'package:kuchiger/screens/desktop/room_screen/widgets/test.dart';
 import 'package:kuchiger/screens/desktop/room_screen/widgets/title_widget_desktop.dart';
 import 'package:kuchiger/screens/desktop/widgets/app_bar_desktop.dart';
 import 'package:kuchiger/screens/desktop/widgets/footer_widget_desktop.dart';
@@ -16,6 +14,37 @@ class RoomScreenDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const List<String> imagesRoom1 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+    const List<String> imagesRoom2 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+    const List<String> imagesRoom3 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+    const List<String> imagesRoom4 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+    const List<String> imagesRoom5 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+    const List<String> imagesRoom6 = [
+      'assets/images/komnata-1.png',
+      'assets/images/komnata-2.png',
+      'assets/images/komnata-3.png'
+    ];
+
     return const Scaffold(
       appBar: AppBarDesktop(),
       drawer: MenuWidgetDesktop(),
@@ -23,26 +52,7 @@ class RoomScreenDesktop extends StatelessWidget {
         child: Column(
           children: [
             MainWidgetDesktop(),
-            TE(
-              title: 'Номера 1 - 4',
-              imagePath: 'assets/images/komnata-1.png',
-              description: 'Двухместный номер',
-              price: '1300 р/сутки',
-              image: [
-                'bed24x24',
-                'tv24x24',
-                'toilet24x24',
-                'fridge24x24',
-              ],
-              imageDescription: [
-                '2 кровати',
-                'Телевизор',
-                'Общий туалет',
-                'Общая кухня',
-              ],
-            ),
 
-            /*
             // Информация
             InfoWidgetDesktop(
               title: 'Корпус №10',
@@ -60,7 +70,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 1-4
             RoomsWidgetDesktop(
               title: 'Номера 1 - 4',
-              imagePath: 'assets/images/komnata-1.png',
+              images: imagesRoom1,
+              // imagePath: 'assets/images/komnata-1.png',
               description: 'Двухместный номер',
               price: '1300 р/сутки',
               image: [
@@ -80,7 +91,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 5-6
             RoomsWidgetDesktop(
               title: 'Номера 5 - 6',
-              imagePath: 'assets/images/komnata-2.png',
+              images: imagesRoom2,
+              // imagePath: 'assets/images/komnata-2.png',
               description: 'Трехместный номер',
               price: '1300 р/сутки',
               image: [
@@ -100,7 +112,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 7-8
             RoomsWidgetDesktop(
               title: 'Номера 7 - 8',
-              imagePath: 'assets/images/komnata-3.png',
+              images: imagesRoom3,
+              // imagePath: 'assets/images/komnata-3.png',
               description: 'Четырехместный номер',
               price: '1300 р/сутки',
               image: [
@@ -137,7 +150,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 3-6
             RoomsWidgetDesktop(
               title: 'Номера 3 - 6',
-              imagePath: 'assets/images/komnata-1.png',
+              images: imagesRoom4,
+              // imagePath: 'assets/images/komnata-1.png',
               description: 'Двухместный благоустроенный номер\n(без душа)',
               price: '3200 р/сутки',
               image: [
@@ -159,7 +173,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 8
             RoomsWidgetDesktop(
               title: 'Номер 8',
-              imagePath: 'assets/images/komnata-2.png',
+              images: imagesRoom5,
+              // imagePath: 'assets/images/komnata-2.png',
               description: 'Семейный номер',
               price: '3200 р/сутки',
               image: [
@@ -181,7 +196,8 @@ class RoomScreenDesktop extends StatelessWidget {
             // Комната 9-10
             RoomsWidgetDesktop(
               title: 'Номера 9 - 10',
-              imagePath: 'assets/images/komnata-3.png',
+              images: imagesRoom6,
+              // imagePath: 'assets/images/komnata-3.png',
               description: 'Трехместный номер',
               price: '4800 р/сутки',
               image: [
@@ -198,7 +214,7 @@ class RoomScreenDesktop extends StatelessWidget {
                 'Душ',
                 'Кухня',
               ],
-            ),*/
+            ),
             FooterWidgetDesktop(),
           ],
         ),

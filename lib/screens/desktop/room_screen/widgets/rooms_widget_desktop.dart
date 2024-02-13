@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:kuchiger/screens/desktop/room_screen/widgets/images_carousel_slider.dart';
 
 class RoomsWidgetDesktop extends StatelessWidget {
   final String title;
-  final String imagePath;
+  final List<String> images;
+  // final String imagePath;
   final String description;
   final String price;
   final List<String> image;
@@ -10,7 +12,8 @@ class RoomsWidgetDesktop extends StatelessWidget {
 
   const RoomsWidgetDesktop({
     required this.title,
-    required this.imagePath,
+    required this.images,
+    // required this.imagePath,
     required this.description,
     required this.price,
     required this.image,
@@ -19,12 +22,13 @@ class RoomsWidgetDesktop extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding:
           const EdgeInsets.only(top: 28, left: 262, right: 262, bottom: 28),
       child: Container(
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           maxWidth: double.infinity,
           maxHeight: double.infinity,
         ),
@@ -58,48 +62,51 @@ class RoomsWidgetDesktop extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Image.asset(
-                  imagePath,
-                  width: 495,
-                  height: 280,
-                  fit: BoxFit.fill,
-                ),
-              ),
-              const SizedBox(height: 10),
               Row(
                 children: [
+                  ImagesCarouselSlider(images: images),
+                  // ClipRRect(
+                  //   borderRadius: BorderRadius.circular(10),
+                  //   child: Image.asset(
+                  //     imagePath,
+                  //     width: 495,
+                  //     height: 280,
+                  //     fit: BoxFit.fill,
+                  //   ),
+                  // ),
+                  const SizedBox(width: 32),
                   Expanded(
                     child: Column(
-                      children: List.generate(
-                        image.length,
-                        (index) => _buildImageWithText(
-                            image[index], imageDescription[index]),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 200,
-                    height: 70,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(226, 226, 226, 1),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                            top: 8, bottom: 8, left: 12, right: 10),
-                        child: Text(
-                          price,
-                          style: const TextStyle(
-                            fontFamily: 'Montserrat',
-                            color: Colors.black,
-                            fontSize: 26,
-                            fontWeight: FontWeight.w400,
+                      children: [
+                        ...List.generate(
+                          image.length,
+                          (index) => _buildImageWithText(
+                              image[index], imageDescription[index]),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20),
+                          child: Container(
+                            width: 200,
+                            height: 70,
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(226, 226, 226, 1),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Center(
+                              child: Text(
+                                price,
+                                style: const TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.black,
+                                  fontSize: 26,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
                           ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                 ],
@@ -112,22 +119,27 @@ class RoomsWidgetDesktop extends StatelessWidget {
   }
 
   Widget _buildImageWithText(String imageName, String text) {
-    return Row(
-      children: [
-        Image.asset(
-          'assets/images/$imageName.png',
-        ),
-        const SizedBox(width: 10),
-        Text(
-          text,
-          style: const TextStyle(
-            fontFamily: 'Montserrat',
-            color: Colors.white,
-            fontSize: 24,
-            fontWeight: FontWeight.w400,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Row(
+        children: [
+          Image.asset(
+            'assets/images/$imageName.png',
           ),
-        ),
-      ],
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(
+                fontFamily: 'Montserrat',
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
